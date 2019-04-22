@@ -1,0 +1,1375 @@
+@prefix : <http://purl.obolibrary.org/obo/mrio.owl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.obolibrary.org/obo/mrio.owl> .
+
+<http://purl.obolibrary.org/obo/mrio.owl> rdf:type owl:Ontology ;
+                                           owl:versionIRI <http://purl.obolibrary.org/obo/mrio/releases/2019-02-11/mrio.owl> ;
+                                           owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ,
+                                                       <http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl> ,
+                                                       <http://purl.obolibrary.org/obo/obi/2018-08-27/obi.owl> ;
+                                           <http://purl.org/dc/elements/1.1/creator> "Lucas Serra" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000293
+<http://purl.obolibrary.org/obo/OBI_0000293> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000295
+<http://purl.obolibrary.org/obo/OBI_0000295> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+<http://purl.obolibrary.org/obo/OBI_0000299> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000312
+<http://purl.obolibrary.org/obo/OBI_0000312> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+<http://purl.obolibrary.org/obo/RO_0000087> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/MRIO_0000376
+<http://purl.obolibrary.org/obo/MRIO_0000376> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              rdfs:range xsd:float ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "The repetition time (TR) is the time from the application of an excitation pulse to the application of the next pulse. It determines how much longitudinal magnetization recovers between each pulse. It is measured in milliseconds. (radiopedia)" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has TR"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000377
+<http://purl.obolibrary.org/obo/MRIO_0000377> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              rdfs:range xsd:float ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "The echo time (TE) refers to the time between the application of the radiofrequency excitation pulse and the peak of the signal induced in the coil. It is measured in milliseconds. The amount of T2 relaxation is controlled by the TE. (radiopedia)" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has TE"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000384
+<http://purl.obolibrary.org/obo/MRIO_0000384> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              rdfs:range xsd:float ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has flip angle"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000393
+<http://purl.obolibrary.org/obo/MRIO_0000393> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              rdfs:range xsd:float ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has inversion time"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000427
+<http://purl.obolibrary.org/obo/MRIO_0000427> rdf:type owl:DatatypeProperty ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has MR sequence parameter"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000438
+<http://purl.obolibrary.org/obo/MRIO_0000438> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has echo numbers"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000439
+<http://purl.obolibrary.org/obo/MRIO_0000439> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "the number of spin echoes in given unit of time" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has echo train length"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000440
+<http://purl.obolibrary.org/obo/MRIO_0000440> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has number of averages"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000441
+<http://purl.obolibrary.org/obo/MRIO_0000441> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000427> ;
+                                              rdfs:range xsd:string ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has variable flip angle"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000442
+<http://purl.obolibrary.org/obo/MRIO_0000442> rdf:type owl:DatatypeProperty ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has MR image parameter"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000443
+<http://purl.obolibrary.org/obo/MRIO_0000443> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000442> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has patient image orientation"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000444
+<http://purl.obolibrary.org/obo/MRIO_0000444> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000442> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has rows"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000445
+<http://purl.obolibrary.org/obo/MRIO_0000445> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000442> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has columns"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000446
+<http://purl.obolibrary.org/obo/MRIO_0000446> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000442> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has pixel spacing"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000447
+<http://purl.obolibrary.org/obo/MRIO_0000447> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000442> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has slice thickness"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000448
+<http://purl.obolibrary.org/obo/MRIO_0000448> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/MRIO_0000442> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "The distance between the slices that is not included in the measurement of slices" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "has spacing between slices"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdfs:label "material entity" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000101
+<http://purl.obolibrary.org/obo/IAO_0000101> rdf:type owl:Class ;
+                                             rdfs:label "image" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000109
+<http://purl.obolibrary.org/obo/IAO_0000109> rdf:type owl:Class ;
+                                             rdfs:label "measurement datum" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000140
+<http://purl.obolibrary.org/obo/IAO_0000140> rdf:type owl:Class ;
+                                             rdfs:label "setting datum" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000300
+<http://purl.obolibrary.org/obo/IAO_0000300> rdf:type owl:Class ;
+                                             rdfs:label "textual entity" .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000060
+<http://purl.obolibrary.org/obo/MRIO_0000060> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000398> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "magnetic resonance imaging objective to determine the structure of brain regions in an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "structural objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000061
+<http://purl.obolibrary.org/obo/MRIO_0000061> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000411> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "SIENAX"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000062
+<http://purl.obolibrary.org/obo/MRIO_0000062> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000410> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a volumetry objective regarding specific brain regions" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "regional brain volumetry objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000063
+<http://purl.obolibrary.org/obo/MRIO_0000063> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000062> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a regional volumetry objective regarding specific tissues in the brain" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "tissue-specific volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000064
+<http://purl.obolibrary.org/obo/MRIO_0000064> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000063> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a tissue-specific volumetry objective regarding the  gray matter" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "gray matter volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000065
+<http://purl.obolibrary.org/obo/MRIO_0000065> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000063> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "a tissue-specific volumetry objective regarding the white matter"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000066
+<http://purl.obolibrary.org/obo/MRIO_0000066> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000063> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a tissue-specific volumetry objective regarding the cerebrospianl fluid" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "cerebrospinal fluid volumetry"@en ;
+                                              rdfs:seeAlso "CSF volumetry" .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000067
+<http://purl.obolibrary.org/obo/MRIO_0000067> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000062> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a regional volumetry objective regarding specific brain structures" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "structure-specific volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000068
+<http://purl.obolibrary.org/obo/MRIO_0000068> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000067> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structure-specific volumetry objective regarding the cortex" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "cortical volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000069
+<http://purl.obolibrary.org/obo/MRIO_0000069> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000067> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "cortical thickness"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000070
+<http://purl.obolibrary.org/obo/MRIO_0000070> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000067> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structure-specific volumetry objective regarding the thalamus" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "thalamic volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000071
+<http://purl.obolibrary.org/obo/MRIO_0000071> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000067> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structure-specific volumetry objective regarding the basal ganglia" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "basal ganglia volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000072
+<http://purl.obolibrary.org/obo/MRIO_0000072> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000067> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structure-specific volumetry objective regarding the hippocampus" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "hippocampal volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000073
+<http://purl.obolibrary.org/obo/MRIO_0000073> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000060> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structural objective to generate signal contrast based on physical differences in tissues" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "tissue properties objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000074
+<http://purl.obolibrary.org/obo/MRIO_0000074> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000073> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a tissue properties objective to generate signal contrast based on the differences in Brownian motion of water" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5039674/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "diffusion properties objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000075
+<http://purl.obolibrary.org/obo/MRIO_0000075> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000074> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a diffusion properties objective to generate signal contrast based on the measure of mean diffusion of each direction (axial and radial)" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5835085/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "mean diffusivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000076
+<http://purl.obolibrary.org/obo/MRIO_0000076> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000075> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a mean diffusivity objective to generate signal contrast on the entirety of the brain" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "whole brain diffusivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000077
+<http://purl.obolibrary.org/obo/MRIO_0000077> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000075> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a mean diffusivity objective to generate signal contrast on a specific brain structure" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "structure-specific diffusivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000078
+<http://purl.obolibrary.org/obo/MRIO_0000078> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000074> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a diffusion properties objective to generate signal contrast based on the  the total magnitude of water directional movement along the axonal fibers" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5835085/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "fractional anisotropy objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000079
+<http://purl.obolibrary.org/obo/MRIO_0000079> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000074> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a diffusion properties objective to generate signal contrast based on the magnitude of water diffusion perpendicular to the tract" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5835085/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "radial diffusivity  objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000080
+<http://purl.obolibrary.org/obo/MRIO_0000080> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000074> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a diffusion properties objective to generate signal contrast based on the mean diffusion coefficient of water molecules diffusing parallel to the tract within the voxel of interest" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5835085/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "axial diffusivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000081
+<http://purl.obolibrary.org/obo/MRIO_0000081> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000073> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "macromolecular properties objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000082
+<http://purl.obolibrary.org/obo/MRIO_0000082> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000081> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "myelin content via myelin water imaging objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000083
+<http://purl.obolibrary.org/obo/MRIO_0000083> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000081> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetization transfer imaging objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000084
+<http://purl.obolibrary.org/obo/MRIO_0000084> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000073> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "iron content objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000085
+<http://purl.obolibrary.org/obo/MRIO_0000085> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000073> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a tissue properties objective to generate signal contrast based on the physical quantity that describes the change in magnetization of a material in response to an applied magnetic field" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000118> "QSM" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pubmed/27434134" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "quantitative susceptibility mapping objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000086
+<http://purl.obolibrary.org/obo/MRIO_0000086> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000060> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "a structural objective to determine the extent of lesions in specific regions of the brain" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "focal pathology measurement objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000087
+<http://purl.obolibrary.org/obo/MRIO_0000087> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000086> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a focal pathology measurement objective to determine the space occupied by brain lesions identified and demarcated using T2 images" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "T2 lesion volume objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000089
+<http://purl.obolibrary.org/obo/MRIO_0000089> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000086> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a focal pathology measurement objective to determine the presence of hyperintense areas due to uptake and concentration of the enhancing contrast dye" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "contrast-enhancing lesions objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000090
+<http://purl.obolibrary.org/obo/MRIO_0000090> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000060> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structual objective to determine the connectivity of regions of the brain based upon physical connections" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "structural connectivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000091
+<http://purl.obolibrary.org/obo/MRIO_0000091> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000421> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a functional objective in an evaluant that performs a task or series of tasks during the imaging assay" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "task-based activation objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000092
+<http://purl.obolibrary.org/obo/MRIO_0000092> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000091> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a task-based objective to determine the connectivity of regions of the brain based upon statistical dependencies" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "task-based connectivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000093
+<http://purl.obolibrary.org/obo/MRIO_0000093> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000112> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a resting state functional connectivity objective to determine the connectivity of regions of the brain based upon statistical dependencies" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "resting state connectivity objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000095
+<http://purl.obolibrary.org/obo/MRIO_0000095> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000421> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a functional objective to determine the status of the cerebral circulation" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "perfusion objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000096
+<http://purl.obolibrary.org/obo/MRIO_0000096> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000095> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a perfusion objective to determine how blood flow changes in the cerebral circulation of the brain" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "cerebral blood flow"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000097
+<http://purl.obolibrary.org/obo/MRIO_0000097> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000095> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a perfusion objective to determine how blood volume changes in the cerebral circulation of the brain" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "cerebral blood volume"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000098
+<http://purl.obolibrary.org/obo/MRIO_0000098> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000421> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "permeability"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000099
+<http://purl.obolibrary.org/obo/MRIO_0000099> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000398> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "magnetic resonance imaging objective to measure biochemical changes in the brain" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "metabolic objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000100
+<http://purl.obolibrary.org/obo/MRIO_0000100> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000113> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a spectroscopy objective to record spectra from one region of the brain at a time" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2927327/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "regional spectroscopy"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000101
+<http://purl.obolibrary.org/obo/MRIO_0000101> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000100> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "single-voxel MR spectroscopy"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000102
+<http://purl.obolibrary.org/obo/MRIO_0000102> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000113> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "spectroscopy objective to simultaneously record spectra from multiple regions and thereby map out the spatial distribution of metabolites within the brain" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2927327/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "multi-voxel spectroscopy"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000103
+<http://purl.obolibrary.org/obo/MRIO_0000103> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000099> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "objective to image certain compounds at concentrations that are too low to impact the contrast of standard MR imaging and too low to directly be detected in MR spectroscopy at typical water imaging resolution" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4999387/" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "chemical exchange saturation transfer objective"@en ;
+                                              rdfs:seeAlso "CEST" .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000109
+<http://purl.obolibrary.org/obo/MRIO_0000109> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000114> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> """Spin-echo pulse sequences are one of the earliest developed and still widely used (in the form of fast spin-echo) of all MRI pulse sequences. The pulse sequence timing can be adjusted to give T1-weighted, proton density, and T2-weighted images. Dual echo and multiecho sequences can be used to obtain both proton density and T2-weighted images simultaneously.
+
+The two variables of interest in spin echo sequences are the repetition time (TR) and the echo time (TE). All spin echo sequences include a slice selective 90-degree pulse followed by one or more 180 degree refocusing pulses as shown in the diagrams.""" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "radiopaedia.org" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "spin echo sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000110
+<http://purl.obolibrary.org/obo/MRIO_0000110> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000114> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging pulse sequence used to selectively null the signal for certain tissues (e.g. fat or fluid)." ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "radiopaedia.org" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "inversion recovery sequence"@en ;
+                                              rdfs:seeAlso "IR sequence" .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000111
+<http://purl.obolibrary.org/obo/MRIO_0000111> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000114> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging pulse sequence of sufficient quality to visualize targeted pathologies, which may use longer scan times or ultra high field magnets" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> """https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3556720/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4520483/""" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "high-resolution T1 sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000112
+<http://purl.obolibrary.org/obo/MRIO_0000112> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000421> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a functional objective performed in an evaluant at rest" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "resting state functional objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000113
+<http://purl.obolibrary.org/obo/MRIO_0000113> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000099> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "metabolic objective to measure biochemical changes in the brain by examining the emission spectra of molecules" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "spectroscopy objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000114
+<http://purl.obolibrary.org/obo/MRIO_0000114> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000047>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000436>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000047> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging pulse sequence is a combination of radiofrequency pulses and gradient waveforms in order to modify the inclination of the magnetization vector and to acquire the echo signal controlling the time between the RF excitation pulses and the acquisition time of the echo." ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ncbi.nlm.nih.gov/pubmed/29341000" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging pulse sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000115
+<http://purl.obolibrary.org/obo/MRIO_0000115> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000341>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000392>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000341> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging image created using a fluid-attenuated inversion recovery sequence" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "fluid-attenuated inversion recovery image"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000116
+<http://purl.obolibrary.org/obo/MRIO_0000116> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000341>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000111>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000341> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging image created using a high-resolution T1 sequence" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "high-resolution T1 image"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000117
+<http://purl.obolibrary.org/obo/MRIO_0000117> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000341>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000110>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000341> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging image created using a inversion recovery sequence" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "inversion recovery image"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000118
+<http://purl.obolibrary.org/obo/MRIO_0000118> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000341>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000387>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000341> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging image created using a proton density T2 sequence" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "proton density T2 image"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000119
+<http://purl.obolibrary.org/obo/MRIO_0000119> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000341>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000109>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000341> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging image created using a spin echo sequence" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "spin echo image"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000341
+<http://purl.obolibrary.org/obo/MRIO_0000341> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000101>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000400>
+                                                                                                                                     ]
+                                                                                                                                   ) ;
+                                                                                                                rdf:type owl:Class
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000101> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:comment "from EDAM: MRI image: An imaging technique that uses magnetic fields and radiowaves to form images, typically to investigate the anatomy and physiology of the human body." ;
+                                              rdfs:label "magnetic resonance imaging image"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000378
+<http://purl.obolibrary.org/obo/MRIO_0000378> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000398>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000436>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000437>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000398> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "an image creation device tha interogates the atoms of an evaluant via radiofrequency pulses and creates magnetic resonance imaging images from the resultant signals" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging machine"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000379
+<http://purl.obolibrary.org/obo/MRIO_0000379> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000185>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000400>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000378>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                           owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000400>
+                                                                                                                                     ]
+                                                                                                                                   ) ;
+                                                                                                                rdf:type owl:Class
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000381>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000185> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "an imaging assay that produces magnetic mresonance imaging data about an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging assay"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000380
+<http://purl.obolibrary.org/obo/MRIO_0000380> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000140>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000378>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000140> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "the setting datum which describes the configuration of a magnetic resonance imaging machine" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging machine setting datum"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000381
+<http://purl.obolibrary.org/obo/MRIO_0000381> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000109>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000382>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000379>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000436> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a measurement datum produced by a magnetic resonance imaging machine about an evaluant, which is used to create an image" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging datum"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000382
+<http://purl.obolibrary.org/obo/MRIO_0000382> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0200000>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000381>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000341>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0200000> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a planned process that produces magnetic resonance imaging images from magnetic resonance imaging datum" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging datum transformation"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000385
+<http://purl.obolibrary.org/obo/MRIO_0000385> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "0.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxExclusive "800.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "0.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxExclusive "30.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:hasValue 90
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "T1 sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000386
+<http://purl.obolibrary.org/obo/MRIO_0000386> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "2000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "30.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:hasValue 90
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "T2 sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000387
+<http://purl.obolibrary.org/obo/MRIO_0000387> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "1000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:maxExclusive "30.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:hasValue 90
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging pulse sequence weighted to reflect the actual density of protons; an intermediate sequence sharing some features of both T1 and T2." ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "radiopaedia.org" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "proton density T2 sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000388
+<http://purl.obolibrary.org/obo/MRIO_0000388> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "2000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "60.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:hasValue 90
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "T2 FSE sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000389
+<http://purl.obolibrary.org/obo/MRIO_0000389> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "0.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:maxExclusive "30.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "70.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "110.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "T1 GRE sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000390
+<http://purl.obolibrary.org/obo/MRIO_0000390> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "0.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:maxExclusive "30.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "5.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "20.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "T2* GRE sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000391
+<http://purl.obolibrary.org/obo/MRIO_0000391> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "2000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minExclusive "60.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000393> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "120.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "170.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:hasValue 180
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:comment "flip angle: 180 -> 90 degrees, need to represent the change" ;
+                                              rdfs:label "STIR sequence"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000392
+<http://purl.obolibrary.org/obo/MRIO_0000392> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/MRIO_0000114>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000376> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "8000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "11000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000377> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "60.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "140.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000384> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "90.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "180.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000393> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "2000.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "2500.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/MRIO_0000439> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:float ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive "1.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                       [ xsd:maxInclusive "27.0"^^xsd:float
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a special inversion recovery sequence with a long inversion time. This removes signal from the cerebrospinal fluid from the resulting images" ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "radiopaedia.org" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "fluid-attenuated inversion recovery sequence"@en ;
+                                              rdfs:seeAlso "FLAIR sequence" .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000394
+<http://purl.obolibrary.org/obo/MRIO_0000394> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000378> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging machine whose primary magnet has 1.5 tesla of strength" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "1.5 tesla magnetic resonance imaging machine"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000395
+<http://purl.obolibrary.org/obo/MRIO_0000395> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000378> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging machine whose primary magnet has 3 tesla of strength" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "3 tesla magnetic resonance imaging machine"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000398
+<http://purl.obolibrary.org/obo/MRIO_0000398> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000441> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "an assay objective to determine a specified type of information about an entity evaluated by magnetic resonance imaging" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000399
+<http://purl.obolibrary.org/obo/MRIO_0000399> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000073> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a tissue properties objective to determine the presence of extravasated blood in the brain of an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "cerebral microbleed objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000400
+<http://purl.obolibrary.org/obo/MRIO_0000400> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000067> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "an evaluant role that inheres in a material entity that is realized in a magnetic resonance assay in which data is generated about the bearer of the magnetic resonance imaging evaluant role" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging evaluant role"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000410
+<http://purl.obolibrary.org/obo/MRIO_0000410> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000060> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structural objective to determine the volume of brain regions in an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "volumetry objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000411
+<http://purl.obolibrary.org/obo/MRIO_0000411> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000410> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a volumetry objective to determine the volume of the whole brain of an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "whole brain volumetry"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000413
+<http://purl.obolibrary.org/obo/MRIO_0000413> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000086> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a focal pathology measurement objective to determine the presence of hypointense regions that normally appear as white matter on T1 image in an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "black hole identification objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000417
+<http://purl.obolibrary.org/obo/MRIO_0000417> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000090> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a structual connectivity objective to determine the 3D model of nerve tract data from diffusion images in an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "tractography objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000420
+<http://purl.obolibrary.org/obo/MRIO_0000420> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000421> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a functional objective to determine the which areas of the brain map to specific functions based upon measures of brain activity" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "functional mapping objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000421
+<http://purl.obolibrary.org/obo/MRIO_0000421> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/MRIO_0000398> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "a magnetic resonance imaging assessment to determine patterns of brain activity by detecting changes associated with blood flow in an evaluant" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "functional objective"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000434
+<http://purl.obolibrary.org/obo/MRIO_0000434> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000300> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "manufacturer model name"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000436
+<http://purl.obolibrary.org/obo/MRIO_0000436> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000832>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000378>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000374>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000832> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "a measurement device that creates radiofrquency pulse sequences in order to excite the atoms in the tissues of an evaluant and also receives the resultant signals from these tissues" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging radiofrequency coil"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000437
+<http://purl.obolibrary.org/obo/MRIO_0000437> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000968>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/MRIO_0000378>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000968> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000119> "a device that creates a uniform magnetic field in a magnetic resonance imaging machine" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "magnetic resonance imaging magnet"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_9606
+<http://purl.obolibrary.org/obo/NCBITaxon_9606> rdf:type owl:Class ;
+                                                rdfs:label "Homo sapiens" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000047
+<http://purl.obolibrary.org/obo/OBI_0000047> rdfs:label "processed material" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000067
+<http://purl.obolibrary.org/obo/OBI_0000067> rdf:type owl:Class ;
+                                             rdfs:label "evaluant role" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000185
+<http://purl.obolibrary.org/obo/OBI_0000185> rdf:type owl:Class ;
+                                             rdfs:label "imaging assay" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000374
+<http://purl.obolibrary.org/obo/OBI_0000374> rdfs:label "excitation function" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000398
+<http://purl.obolibrary.org/obo/OBI_0000398> rdf:type owl:Class ;
+                                             rdfs:label "image creation device" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000441
+<http://purl.obolibrary.org/obo/OBI_0000441> rdf:type owl:Class ;
+                                             rdfs:label "assay objective" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000832
+<http://purl.obolibrary.org/obo/OBI_0000832> rdf:type owl:Class ;
+                                             rdfs:label "measurement device" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000835
+<http://purl.obolibrary.org/obo/OBI_0000835> rdf:type owl:Class ;
+                                             rdfs:label "manufacturer" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000968
+<http://purl.obolibrary.org/obo/OBI_0000968> rdf:type owl:Class ;
+                                             rdfs:label "device" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0200000
+<http://purl.obolibrary.org/obo/OBI_0200000> rdf:type owl:Class ;
+                                             rdfs:label "data transformation" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/MRIO_0000397
+<http://purl.obolibrary.org/obo/MRIO_0000397> rdf:type owl:NamedIndividual ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/MRIO_0000401> ;
+                                              <http://purl.obolibrary.org/obo/MRIO_0000376> "650.0"^^xsd:float ;
+                                              <http://purl.obolibrary.org/obo/MRIO_0000377> "20.0"^^xsd:float ;
+                                              <http://purl.obolibrary.org/obo/MRIO_0000384> "15.0"^^xsd:float ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "old test sequence 1"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000401
+<http://purl.obolibrary.org/obo/MRIO_0000401> rdf:type owl:NamedIndividual ,
+                                                       <http://purl.obolibrary.org/obo/MRIO_0000394> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "old test MRI machine 1"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000433
+<http://purl.obolibrary.org/obo/MRIO_0000433> rdf:type owl:NamedIndividual ,
+                                                       <http://purl.obolibrary.org/obo/OBI_0000835> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "GE medical systems"@en .
+
+
+###  http://purl.obolibrary.org/obo/MRIO_0000435
+<http://purl.obolibrary.org/obo/MRIO_0000435> rdf:type owl:NamedIndividual ,
+                                                       <http://purl.obolibrary.org/obo/MRIO_0000434> ;
+                                              <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-2104-0568> ;
+                                              rdfs:label "signa excite"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
